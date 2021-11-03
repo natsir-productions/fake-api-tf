@@ -4,8 +4,8 @@
 - [x] deploy skeleton project
 - [] create api crud operation
   - [] add product
-  - [] get all products
-  - [] get single product
+  - [x] get all products
+  - [x] get single product
   - [] delete product
   - [] update product
 - [] create api orders
