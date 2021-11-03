@@ -17,5 +17,6 @@
 - [] create api users
 - [] create api bulk operation
 - [] add middlewares to apis
+- [] handle status code
 - [] middlewares
   - [] is user sign in
