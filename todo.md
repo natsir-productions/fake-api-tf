@@ -2,11 +2,11 @@
 
 - [x] setup skeleton project
 - [x] deploy skeleton project
-- [] create api crud operation
+- [x] create api crud operation
   - [x] add product
   - [x] get all products
   - [x] get single product
-  - [] delete product
+  - [x] delete product
   - [x] update product
 - [] create api orders
 - [] create api payment
