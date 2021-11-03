@@ -15,7 +15,7 @@ This repository provide awesomeness of fake api related to ecommerce field.
 ## How To Use
 Currently there is no authentication required to consume apis. No need to worry about.
 
-If you are postman user, you can download the following [postam collection](https://drive.google.com/file/d/1IXodfyEJvOie6oy2wTYXZtsfvKFUrU4m/view?usp=sharing).
+If you are postman user, you can download the following [postmane collection](https://drive.google.com/file/d/1IXodfyEJvOie6oy2wTYXZtsfvKFUrU4m/view?usp=sharing).
 
 ```
 BASE URL: https://fake-api-tf.herokuapp.com/api
