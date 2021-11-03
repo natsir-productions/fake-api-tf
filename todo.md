@@ -3,7 +3,7 @@
 - [x] setup skeleton project
 - [x] deploy skeleton project
 - [] create api crud operation
-  - [] add product
+  - [x] add product
   - [x] get all products
   - [x] get single product
   - [] delete product

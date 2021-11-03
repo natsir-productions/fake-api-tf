@@ -19,6 +19,20 @@ async function getProduct(productId) {
 }
 
 
+/**
+ * @param {JSON} data 
+ */
+async function addProduct(data) {
+  // todo query db
+  const newProduct = Object.assign({
+    id: PRODUCTS.length + 1
+  }, data);
+
+  PRODUCTS.push(newProduct);
+}
+
+
 module.exports = {
-  getProduct
+  getProduct,
+  addProduct
 }
