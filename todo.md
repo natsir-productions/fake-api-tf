@@ -1,6 +1,12 @@
 # prioritas task
 - [x] setup skeleton project
 - [x] deploy skeleton project
-- [] item 1
-- [] item 2
-- [] item 3
+- [] create api crud operation
+  - [] add product
+  - [] get all products
+  - [] get single product
+  - [] delete product
+  - [] update product
+- [] create api orders
+- [] create api payment
+- [] connect to mongodb
