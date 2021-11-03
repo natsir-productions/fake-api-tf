@@ -7,7 +7,7 @@
   - [x] get all products
   - [x] get single product
   - [] delete product
-  - [] update product
+  - [x] update product
 - [] create api orders
 - [] create api payment
 - [] create guideline
