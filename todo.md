@@ -10,6 +10,12 @@
   - [] update product
 - [] create api orders
 - [] create api payment
+- [] create guideline
+
+# nice to have
 - [] connect to mongodb
 - [] create api users
-- [] create guideline
+- [] create api bulk operation
+- [] add middlewares to apis
+- [] middlewares
+  - [] is user sign in
