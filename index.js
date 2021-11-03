@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/fake-api-tf/products', productsRouting);
+app.use('/api/products', productsRouting);
 
 
 const PORT = process.env.PORT || 4000;
