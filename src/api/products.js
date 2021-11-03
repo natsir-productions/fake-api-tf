@@ -3,7 +3,8 @@ const { PRODUCTS } = require('../global');
 const { 
   getProduct,
   addProduct,
-  updateProduct 
+  updateProduct,
+  deleteProduct
 } = require('../services/products');
 const router = express.Router();
 
@@ -69,6 +70,24 @@ router.put('/:id', async (req, res) => {
   try {
     const product = await updateProduct(productId, data);
     res.status(200).send(product);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
+
+// DELETE PRODUCT
+router.delete('/:id', async (req, res) => {
+  const productId = req.params['id'];
+
+  // this validation never gonna hit, fixing later
+  if (productId === undefined) {
+    res.status(400).send('id product is required.');
+  }
+
+  try {
+    await deleteProduct(productId);
+    res.status(204).send();
   } catch (error) {
     res.status(500).send(error.message);
   }

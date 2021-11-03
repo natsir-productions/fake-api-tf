@@ -56,8 +56,24 @@ async function updateProduct(productId, data) {
 }
 
 
+/**
+ * @param {string} productId 
+ */
+async function deleteProduct(productId) {
+  // todo query db
+  const productIndex = PRODUCTS.findIndex(p => p.id == productId);
+  if (productIndex === -1) {
+    throw new Error(`Product with given id ${productId} not found`);
+  }
+
+  // deleting that product
+  PRODUCTS.splice(productIndex);
+}
+
+
 module.exports = {
   getProduct,
   addProduct,
-  updateProduct
+  updateProduct,
+  deleteProduct
 }
