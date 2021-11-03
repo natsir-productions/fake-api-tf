@@ -10,7 +10,7 @@
   - [x] update product
 - [] create api orders
 - [] create api payment
-- [] create guideline
+- [x] create guideline
 
 # nice to have
 - [] connect to mongodb
