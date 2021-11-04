@@ -2,6 +2,11 @@
 This repository provide awesomeness of fake api related to ecommerce field.  
 *Created with love  by Natsir* :sunglasses:
 
+## Head over to
+- todo.md : talks about top priority tasks
+- discussions.md : talks about branching strategy and packages (for now).
+
+
 ## Available API
 1. Products
    1. Add Product
