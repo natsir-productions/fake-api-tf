@@ -11,9 +11,9 @@
 - [] create api orders
 - [] create api payment
 - [x] create guideline
+- [x] connect to mongodb
 
 # nice to have
-- [] connect to mongodb
 - [] create api users
 - [] create api bulk operation
 - [] add middlewares to apis

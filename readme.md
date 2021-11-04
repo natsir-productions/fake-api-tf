@@ -87,13 +87,12 @@ BASE URL: https://fake-api-tf.herokuapp.com/api
 3. TBD
 
 ## Limitation with Current Version
-API is not connected to any database server yet.
+API (add and get products) is connected to mongodb locally, not deploy yet.
 
 ## Next Release
 These are top four issues that we care most about.
-1. Connecting to database (will be mongodb).
-2. API Orders, Payments, Users.
-3. Fixing Status Code
-4. Unit tests.
+1. API Orders, Payments, Users.
+2. Fixing Status Code
+3. Unit tests.
 
 Create pull request if you would like to contribute to this awesome project. Or just create issue if you want to discuss something (hope not abour error lol) or just chilling suggest next billion dollar feature.
