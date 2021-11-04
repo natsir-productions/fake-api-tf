@@ -1,6 +1,7 @@
 const express = require('express');
 const { PRODUCTS } = require('../global');
 const { 
+  getProducts,
   getProduct,
   addProduct,
   updateProduct,
@@ -18,8 +19,8 @@ router.post('/', async (req, res) => {
   }
 
   try {
-    await addProduct(data);
-    res.status(201).send('Product successfully added.');
+    const result = await addProduct(data);
+    res.status(201).send(result);
   } catch (error) {
     res.status(500).send(error.message);
   }
@@ -28,10 +29,12 @@ router.post('/', async (req, res) => {
 
 // GET ALL PRODUCTS
 router.get('/', async (req, res) => {
-  const products = PRODUCTS;
-  res.status(200).send({
-    products
-  });
+  try {
+    const products = await getProducts();
+    res.status(200).send(products);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
 });
 
 

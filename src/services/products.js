@@ -1,4 +1,22 @@
+const mongoose = require('mongoose');
 const { PRODUCTS } = require("../global");
+
+
+const productSchema = new mongoose.Schema({
+  name: String,
+  price: Number,
+  colors: [ String ],
+  _dateCreated: { type: Date, default: Date.now }
+});
+
+const Product = mongoose.model('Product', productSchema);
+
+
+async function getProducts() {
+  const products = await Product.find();
+  return products;
+}
+
 
 /**
  * @param {string} productId 
@@ -23,12 +41,9 @@ async function getProduct(productId) {
  * @param {JSON} data 
  */
 async function addProduct(data) {
-  // todo query db
-  const newProduct = Object.assign({
-    id: PRODUCTS.length + 1
-  }, data);
-
-  PRODUCTS.push(newProduct);
+  const product = new Product(data);
+  const result = await product.save();
+  return result;
 }
 
 
@@ -72,6 +87,7 @@ async function deleteProduct(productId) {
 
 
 module.exports = {
+  getProducts,
   getProduct,
   addProduct,
   updateProduct,
